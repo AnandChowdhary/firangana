@@ -1,0 +1,83 @@
+::selection {
+	background: whitesmoke;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	background: whitesmoke;
+}
+
+fieldset {
+	border: none;
+}
+
+.login-form {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 50px;
+	background: white;
+	text-align: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+	font-size: 150%;
+	margin-bottom: 30px;
+}
+
+label, input, select, textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+}
+
+input, select, textarea {
+	margin: 10px 0 30px 0;
+	padding: 10px;
+	border: 1px solid #ddd;
+	outline: none;
+	font: inherit;
+	border-radius: 3px;
+}
+
+input:focus, select:focus, textarea:focus {
+	border-color: #69e;
+}
+
+input[type="submit"] {
+	background: #e74c3c;
+	border: none;
+	text-align: center;
+	color: white;
+}
+
+p:last-child input {
+	margin-bottom: 0;
+}
+
+.logo {
+	text-align: center;
+	max-width: 600px;
+	margin: 50px auto 0 auto;
+}
+
+.logo img {
+	width: 75%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 1px solid;
+}
+
+a:hover {
+	color: #69e;
+}
+
+textarea {
+	height: 100px;
+}

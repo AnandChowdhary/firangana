@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Firangana</title>
+		<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+		<header id="mastHead">
+			<div class="l">
+				<div class="icon logo navBtn" href="#">
+					<i class="ion-navicon-round"></i>
+				</div>
+				<a href="http://www.firangana.com" class="logoImg">
+					<img src="http://www.firangana.com/coming-soon/icon.png" alt="Firangana Haathi">
+				</a>
+			</div>
+			<div class="r">
+				<a class="icon" href="http://www.firangana.com/search">
+					<i class="ion-search"></i>
+				</a>
+				<a class="icon" href="http://www.firangana.com/my-account">
+					<i class="ion-person"></i>
+				</a>
+				<a class="icon" href="http://www.firangana.com/cart">
+					<i class="ion-android-cart"></i>
+				</a>
+			</div>
+			<div class="insideNavbar">
+				<div class="deleteBtn">&times;</div>
+				<ul>
+					<li><a href="http://www.firangana.com/clothing">Clothing</a></li>
+					<li><a href="http://www.firangana.com/phone-cases">Phone Cases</a></li>
+					<li><a href="http://www.firangana.com/home-decor">Home Decor</a></li>
+					<li><a href="http://www.firangana.com/lifestyle">Lifestyle</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector(".navBtn").addEventListener("click", function() {
+					document.querySelector(".insideNavbar").style.display = "block";
+				});
+				document.querySelector(".deleteBtn").addEventListener("click", function() {
+					document.querySelector(".insideNavbar").style.display = "none";
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

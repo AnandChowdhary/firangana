@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	font-family: sans-serif;
+	height: 1000px;
+	color: #333;
+	margin: 55px 0 0 0;
+}
+
+::selection {
+	background: whitesmoke;
+}
+
+a {
+	color: #ea6153;
+	text-decoration: none;
+	transition: 0.3s;
+}
+a:focus {
+	background: #ea6153 !important;
+	color: white !important;
+	outline: none;
+	border-radius: 5px;
+}
+
+#firanganaHead {
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+	transition: 0.5s;
+	z-index: 999;
+}
+#firanganaHead .full.width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	transition: 0.5s;
+}
+#firanganaHead .full.width > * {
+	flex: 1;
+}
+#firanganaHead ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#firanganaHead nav > ul > li {
+	display: inline-block;
+}
+#firanganaHead a {
+	color: inherit;
+}
+#firanganaHead nav > ul > li > * {
+	transition: 0.3s;
+	font-size: 96.4%;
+	padding: 10px 28px;
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+}
+#firanganaHead nav > ul > li > *:hover {
+	color: #ea6153;
+}
+
+.nav-icons {
+	display: flex;
+	text-align: center;
+}
+.nav-icons > * {
+	flex: 1;
+}
+
+#firanganaHead .small {
+	width: auto !important;
+	flex: none !important;
+}
+
+.logo img {
+	height: 33px;
+	vertical-align: middle;
+}
+
+.icon-nav {
+	font-size: 200%;
+	padding-left: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.icon-nav:hover {
+	color: #ea6153;
+}
+.icon-nav:first-child {
+	padding-left: 0;
+}
+
+.big {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bigNavbar {
+	display: none;
+}
+.left-nav {
+	text-align: left;
+}
+
+.message {
+	background: whitesmoke;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-size: 70%;
+	display: none !important;
+	padding: 10px 30px 10px 70px;
+	letter-spacing: 1px;
+}
+.message > *:last-child {
+	text-align: right;
+}
+.message i {
+	position: absolute;
+	font-size: 175%;
+}
+.message i:first-child {
+	left: 30px;
+	top: 7px;
+}
+.message i:nth-child(2) {
+	left: 50px;
+	top: 7px;
+}
+
+.flex {
+	display: flex;
+}
+.flex > * {
+	flex: 1;
+}
+
+main {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.masonry {
+	margin: 0;
+	column-count: 1;
+	column-gap: 0;
+}
+
+.masonry > * {
+	margin: 0;
+}
+
+.masonry img {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.masonry {
+		margin: 0 30px;
+		column-count: 3;
+		column-gap: 0.5em;
+	}
+
+	.masonry > * {
+		display: inline-block;
+		margin: 0 0 0.5em;
+	}
+	body {
+		margin: 135px 0 0 0;
+	}
+	#firanganaHead {
+		border-bottom-color: transparent;
+		box-shadow: none;
+	}
+	#firanganaHead .full.width {
+		padding: 0 30px;
+		height: 100px;
+	}
+	#firanganaHead nav > ul > li > a {
+		line-height: 100px;
+	}
+	.icon-nav {
+		padding-left: 30px;
+	}
+	.bigNavbar {
+		display: block;
+	}
+	#firanganaHead .ion-navicon {
+		margin-right: 30px;
+	}
+	#firanganaHead.fixed {
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+		border-bottom: 1px solid #eee;
+	}
+	#firanganaHead.fixed .full.width {
+		height: 60px;
+	}
+	.message {
+		display: flex !important;
+	}
+}
+
+.phone-cases-hover {
+	position: fixed;
+	left: 0; top: 0;
+	bottom: 0; right: 0;
+	z-index: 999999;
+	box-sizing: border-box;
+	padding: 100px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.95);
+	display: none;
+	opacity: 0;
+	transition: 0.5s;
+	font-family: "Montserrat", sans-serif;
+	font-size: 120%;
+	text-transform: uppercase;
+	text-align: center;
+}
+.phone-cases-hover .close-btn {
+	position: absolute;
+	right: 30px; top: 0;
+	font-size: 500%;
+	color: #555;
+	cursor: pointer;
+}
+.phone-cases-hover .close-btn:hover {
+	color: #ea6153;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 2px;
+}
+
+.redirector {
+	z-index: 99999999;
+	transition: opacity 0.5s;
+	opacity: 0;
+	display: none;
+	position: fixed;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	background: #fff;
+}
+
+.small-left > * {
+	width: 25%;
+	float: left;
+}
+.small-left h4 {
+	margin-top: 55px !important;
+}
+.small-left img {
+	margin-right: 10px;
+	height: 20px;
+	vertical-align: top;
+	margin-top: 2px;
+}
+.small-left span {
+	text-transform: lowercase;
+}
+
+.top-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top-nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+.message a:hover {
+	color: #ea6153 !important;
+}

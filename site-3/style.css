@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700);
+
+html {
+	background: #eee;
+}
+body {
+	font-family: "Arimo", sans-serif;
+	background: white;
+	margin: 0 auto;
+	max-width: 350px;
+	position: relative;
+	min-height: 800px;
+	box-shadow: 0px 3px 3px #ddd;
+}
+
+#mastHead {
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 0; right: 0; top: 0;
+	height: 45px;
+	line-height: 45px;
+	z-index: 9999;
+	background: white;
+}
+#mastHead img {
+	vertical-align: middle;
+}
+
+.l {
+	float: left;
+}
+.r {
+	float: right;
+}
+
+#mastHead a {
+	color: inherit;
+	text-decoration: none;
+}
+#mastHead .icon {
+	font-size: 24px;
+	color: #888;
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
+#mastHead .icon:hover {
+	color: #333;
+}
+#mastHead .icon:last-child {
+	margin-right: 5px;
+}
+.logo.icon {
+	margin-left: 5px;
+}
+.logoImg img {
+	height: 35px;
+	margin-top: 5px;
+	vertical-align: top !important;
+}
+
+.insideNavbar {
+	position: absolute;
+	z-index: 99999;
+	left: 0; right: 0; top: 0; bottom: 0;
+	background: whitesmoke;
+	text-align: center;
+	height: 100vh;
+	overflow: auto;
+	padding: 50px 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	display: none;
+}
+.insideNavbar a {
+	display: block;
+	padding: 10px 0;
+}
+.insideNavbar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.insideNavbar li {
+	margin: 0;
+}
+.deleteBtn {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 32px;
+	cursor: default;
+}
+.deleteBtn:hover {
+	color: #333;
+}

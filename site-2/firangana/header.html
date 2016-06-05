@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<header id="masthead" class="transparent">
+	<div class="grid-container">
+		<div class="grid-25">
+			<div class="logo">
+				<div data-title="Menu" class="icon fl navicon-round"><a href="#"><i class="ion-navicon"></i></a></div>
+				<h1><a href="#">Firangana</a></h1>
+			</div>
+		</div>
+		<div class="grid-75 r">
+			<nav>
+				<ul>
+					<li><a href="#">Clothing</a>
+						<ul>
+							<li><a href="#">Formals</a></li>
+							<li><a href="#">Graphic Tees</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Phone Cases</a>
+						<ul>
+							<li><a href="#">Collections</a></li>
+							<li><a href="#">Ethnic</a></li>
+							<li><a href="#">Minimal</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Decor</a>
+						<ul>
+							<li><a href="#">Posters</a></li>
+							<li><a href="#">Wall Clocks</a></li>
+							<li><a href="#">Mugs</a></li>
+							<li><a href="#">Coasters</a></li>
+							<li><a href="#">Framed Art</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Lifestyle</a>
+						<ul>
+							<li><a href="#">Notebooks</a></li>
+							<li><a href="#">Tumblers</a></li>
+							<li><a href="#">Selfie Sticks</a></li>
+						</ul>
+					</li>
+					<li data-title="Help" class="icon f"><a href="#"><i class="ion-tshirt-outline"></i></a></li>
+					<li data-title="Login" class="icon"><a href="#"><i class="ion-happy-outline"></i></a></li>
+					<li data-title="Cart" class="icon"><a href="#"><i class="ion-bag"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="hero-slider">
+
+</div>
+<script type="text/javascript">
+	window.addEventListener("scroll", function() {
+		if (document.body.scrollTop > 200) {
+			document.querySelector("#masthead").classList.remove("transparent");
+		} else {
+			document.querySelector("#masthead").classList.add("transparent");
+		}
+	});
+</script>

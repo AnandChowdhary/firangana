@@ -1,0 +1,44 @@
+<style>
+.case-iphone {
+	background: gray;
+	width: 240px;
+	height: 450px;
+	border-radius: 40px;
+	position: relative;
+	background: #aaa;
+	background: url("https://source.unsplash.com/daily");
+	overflow: hidden;
+	background-size: cover;
+	margin: 50px;
+	box-shadow: -2px -2px 10px rgba(0,0,0,.25) inset, 2px 2px 10px white inset, 0px 2px 5px rgba(0, 0, 0, 0.25);
+	border: 1px solid #ddd;
+}
+
+img {
+	width: 100%;
+}
+
+.case-iphone:after {
+	box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+	border: 1px solid #ddd;
+	content: "";
+	width: 65px;
+	border-radius: 30px;
+	height: 30px;
+	position: absolute;
+	top: 20px;
+	z-index: 1;
+	left: 30px;
+	background: white;
+}
+</style>
+
+<div class="case-iphone"><img id="output"></div>
+
+<input type="file" accept="image/*" onchange="loadFile(event)">
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
+</script>
