@@ -1,7 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:600,700,800);
+@import "https://fonts.googleapis.com/css?family=Cabin:400,700";
 
 ::selection {
     background: whitesmoke;
+}
+
+strong, b {
+    font-weight: 700;
 }
 
 .ta-l {
@@ -15,16 +19,24 @@
 }
 
 body {
-    font-weight: 600;
-    font-family: "Raleway";
+    font-family: "Cabin";
 }
 
 .masthead {
     font-size: 95%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #fff;
+    position: fixed;
     a {
         text-transform: uppercase;
         color: inherit;
-        font-weight: 600;
+        &:hover {
+            text-decoration: none;
+            color: #e74c3c;
+        }
     }
     .row {
         border-bottom: 1px solid #eee;
@@ -48,7 +60,7 @@ body {
                 padding: 3px 0;
             }
             &:hover {
-                text-decoration: none;
+                color: inherit;
             }
             &:hover span {
                 box-shadow: 0 3px 0 #eee;
@@ -86,30 +98,45 @@ body {
 }
 
 .content {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .hero-category {
-    background: #f7f7f7;
+    background: #f7f7f7 url("../img/background-header.png") bottom;
+    background-size: cover;
     height: 440px;
     margin-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .box-category {
+    display: table;
+    position: relative;
+    width: 100%;
     height: 300px;
     margin-bottom: 30px;
-    padding: 50px;
+    padding: 0 0 60px 60px;
+    color: inherit;
     &.blue {
         background: #d6efff;
     }
     &.pink {
         background: #fddbe2;
     }
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+        button {
+            background: #e74c3c;
+            border-color: #e74c3c;
+            color: #fff;
+        }
+    }
 }
 
 h2, h3 {
-    font-weight: 800;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .collection {
@@ -121,19 +148,39 @@ h2, h3 {
 
 button {
     background: #fff;
+    letter-spacing: 0.5px;
     border: 1px solid #e74c3c;
     color: #e74c3c;
     text-transform: uppercase;
     font-size: 80%;
-    font-weight: 700;
     padding: 7px 0;
+    font-weight: 700;
     border-radius: 3px;
+    transition: 0.2s;
+    &.medium {
+        padding: 10px 30px;
+        font-size: 90%;
+    }
+    &.white {
+        border-color: #fff;
+        color: #000;
+        border-radius: 5px;
+    }
+    &:hover {
+        color: #c0392b;
+        border-color: #c0392b;
+    }
     &.primary {
         background: #e74c3c;
         color: #fff;
+        &:hover {
+            background: #c0392b;
+        }
     }
     &.large {
+        font-size: 100%;
         padding: 15px 25px;
+        margin: 10px 0;
     }
 }
 
@@ -152,7 +199,7 @@ figure {
     }
 }
 .product-name {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .colophon {
@@ -163,10 +210,12 @@ figure {
         margin: 0;
         padding: 0;
         list-style: none;
-        a {
-            color: inherit;
+        li {
             margin-bottom: 15px;
-            display: block;
+            a {
+                display: block;
+                color: inherit;
+            }
         }
     }
     .small {
@@ -174,7 +223,7 @@ figure {
     }
     h4 {
         color: #333;
-        font-weight: 800;
+        font-weight: 700;
         text-transform: uppercase;
         font-size: 115%;
         margin-bottom: 15px;
@@ -186,4 +235,28 @@ figure {
 
 .small {
     font-size: 90%;
+}
+
+.ma-20 {
+    margin: 20px 0;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.subheading {
+    font-size: 120%;
+    margin: 20px 0;
+}
+
+.dis-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
